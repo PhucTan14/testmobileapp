@@ -1,0 +1,26 @@
+{% include "store/base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+<style> .empty-product-icon {
+    font-size: 5rem;
+    color: #999;
+}
+
+.empty-product-message {
+    font-size: 1.5rem;
+    color: #555;
+} </style></head>
+<main>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center"><i class="fas fa-box-open empty-product-icon"></i>
+                <p class="empty-product-message mt-3">Giao Dịch Đã Thành Công Bạn Check Mail Để Kiểm tra hóa đơn chi tiết</p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

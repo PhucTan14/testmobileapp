@@ -1,0 +1,14 @@
+{% extends "store/base.html" %}
+{% load static %}
+{% load allauth i18n %}
+
+{% block content %}
+<div class="w-80 mt-5 mx-auto" style="max-width: 500px;">
+    <h3>Lỗi xác thực</h3>
+    <p>Chúng tôi không thể xác thực tài khoản của bạn.</p>
+    <p>
+        Quay lại đăng nhập? <a href="{% url 'account_login' %}">Đăng nhập</a>
+    </p>
+
+</div>
+{% endblock %}

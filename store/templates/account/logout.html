@@ -1,0 +1,29 @@
+{% extends "store/base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Bạn muốn đăng xuất?</h1>
+<form method="post" action="{% url 'account_logout' %}">
+    {% csrf_token %}
+    <button type="submit">Đăng xuất</button>
+</form>
+
+<div class="d-flex algin-items-center">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <span>Đang chuyển tiếp đến dịch vụ thứ 3</span>
+</div>
+<style>
+    form {
+        height: 0;
+        overflow: hidden;
+    }
+</style>
+
+<script>
+    setTimeout(function() {
+        document.querySelector('form').submit();
+    }, 1000);
+</script>
+{% endblock %}

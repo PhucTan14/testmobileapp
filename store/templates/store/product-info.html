@@ -1,0 +1,193 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+
+        <main class="pt-5">
+
+            <div class="row g-3">
+
+                <div class="col-md-5 col-lg-6 order-md-first bg-light">
+
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          {% for image in product.images %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="10000">
+                              <img src="{{ image.image.url }}" class="d-block w-100" alt="...">
+                            </div>
+                          {% endfor %}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col-md-7 col-lg-6 ps-md-3 ps-lg-5">
+
+                    <!-- Product title -->
+                    <h1 class="mb-0 h4">{{ product.title }}</h1>
+
+                    <!-- Product brand -->
+                    <strong> {{ product.brand }} </strong>
+
+
+                    <hr>
+
+
+
+                    <div class="border">
+                        <div class="col border-bottom">                                
+                            <div class="row p-3">
+                                <label for="option">
+                                    Option
+                                </label>
+                                <select name="option" id="option" class="form-select form-select-sm w-75" name="option">
+                                    {% for option in product.options %}
+                                        <option value="{{ option.id }}" price="{{option.price}}" ram="{{option.ram}}" storage="{{option.storage}}" color="{{option.color}}">{{option.color}} - {{ option.ram}}GB - {{ option.storage}}GB</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col border-bottom">
+
+                            <div class="row p-3">
+
+                                <div class="col-3"> Price</div>
+
+                                <div class="col-9 text-end"><span class="h4 fw-bold" id="price">
+                                    {{ product.price }} </span></div>
+
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="row p-3">
+                                <div class="col-6">
+                                    <label for="select">Quantity</label>
+                                    <select name="select" id="select" class="form-select form-select-sm">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-6 text-end">
+
+                                    <button type="button" id="add-button" value="{{ product.id }}"
+                                            class="btn btn-secondary btn-sm">
+                                        Add to cart
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row g-3 mt-3">
+                <div class="col-md-5 col-lg-6">
+                    <h5>Product Description</h5>
+                    <p>{{ product.description }}</p>
+                </div>
+                <div class="col-md-7 col-lg-6 ps-md-3 ps-lg-5">
+                    <h5>Info about the product</h5>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td>Brand</td>
+                                <td>{{ product.brand }}</td>
+                            </tr>
+                            <tr>
+                                <td>CPU</td>
+                                <td>{{ product.productinfo.cpu }}</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td id="ram" >Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Storage</td>
+                                <td id="storage">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Display</td>
+                                <td>{{ product.productinfo.screen }}</td>
+                            </tr>
+                            <tr>
+                                <td>Camera</td>
+                                <td>{{ product.productinfo.camera }}</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>{{ product.productinfo.battery }}</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <br>
+
+    </div>
+
+    <script>
+        $(document).on('click', '#add-button', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'cart-add' %}",
+                data: {
+                    'product_id': $(this).val(),
+                    'product_option': $('#option option:selected').val(),
+                    'product_quantity': $('#select option:selected').text(),
+                    'csrfmiddlewaretoken': '{{ csrf_token }}',
+                    'action': 'post'
+                },
+                success: function (json) {
+                    document.getElementById("cart-qty").textContent = json.qty;
+                    console.log("clicked");
+                },
+                error: function (xhr, errmsg, err) {
+                    console.log(xhr.status + ": " + xhr.responseText);
+                },
+            });
+        });
+        $('#option').change(function () {
+            let price = $('#option option:selected').attr('price')
+            $('#price').text(price);
+            $('#ram').text($('#option option:selected').attr('ram'));
+            $('#storage').text($('#option option:selected').attr('storage'));
+            $('#color').text($('#option option:selected').attr('color'));
+        });
+        let price = $('#option option:selected').attr('price')
+        $('#price').text(price);
+        $('#ram').text($('#option option:selected').attr('ram'));
+        $('#storage').text($('#option option:selected').attr('storage'));
+        $('#color').text($('#option option:selected').attr('color'));
+    </script>
+
+{% endblock %}

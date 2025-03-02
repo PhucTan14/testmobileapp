@@ -1,0 +1,15 @@
+{% extends "store/base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="transaction-failed text-center" style="margin-top: 50px;">
+    <img src="{% static 'media/images/logo/error_payment.webp' %}" alt="Transaction Failed" style="width: 150px; height: 150px;">
+    <h2 style="color: #d9534f; margin-top: 20px;">Transaction Failed</h2>
+    <p style="font-size: 18px; color: #5a5a5a;">Unfortunately, your transaction could not be completed.</p>
+    <a href="/" class="btn btn-primary" style="margin-top: 20px;">Return to Home</a>
+</div>
+
+{% endblock %}

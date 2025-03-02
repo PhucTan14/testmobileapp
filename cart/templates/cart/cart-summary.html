@@ -1,0 +1,248 @@
+{% extends "store/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <style>
+        .empty-product-icon {
+            font-size: 5rem;
+            color: #999;
+        }
+
+        .empty-product-message {
+            font-size: 1.5rem;
+            color: #555;
+        }
+    </style>
+
+    <main class="pt-5">
+
+        <div class="container">
+
+            <h1 class="h5"> Shopping cart </h1>
+
+            <hr>
+
+            {% with qty_amount=cart|length %}
+                {% if qty_amount == 0 %}
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12 text-center"><i
+                                    class="fas fa-box-open empty-product-icon"></i>
+                                <p class="empty-product-message mt-3">No products available at
+                                    the moment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                {% else %}
+                    {% for item in cart %}
+
+                        {% with product=item.product %}
+
+                            <br>
+                            <div class="row mb-4 border product-item">
+
+                                <div class="col-md-3 col-lg-2 order-md-first bg-light">
+                                    <img class="img-fluid mx-auto d-block" width="200px"
+                                         alt="{{ product.product_id.title }}"  
+                                         src="{{ product.thumbnail }}">
+                                </div>
+
+
+                                <div class="col-md-9 col-lg-10 ps-md-3 ps-lg-10">
+
+                                   
+
+                                    <div class="border">
+
+                                        <div class="col border-bottom">
+
+                                            <div class="row p-3">
+
+                                                <a href="{{ product.product_id.get_absolute_url }}" class="text-decoration-none col-6">
+                                                    <h5>{{ product.product_id.title }}</h5>
+                                                </a>
+
+                                                <div class="col-6 text-end">
+                                                    <span class="h6 fw-bold">
+                                                        {{ product.get_formatted_price }}
+                                                        <!-- {#product.price|mul:item.qty #} -->
+                                                    </span>
+                                                </div>
+                                                <p>{{product.option_text}} </p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col">
+
+                                            <div class="row p-3">
+
+                                                <div class="col-12">
+
+                                                    <label for="select">Qty</label>
+
+                                                    &nbsp;
+
+                                                    <select class="quantity-select"
+                                                            data-product-id="{{ product.id }}">
+
+                                                        <option selected>{{ item.qty }}</option>
+
+                                                        <option value="1">1</option>
+
+                                                        <option value="2">2</option>
+
+                                                        <option value="3">3</option>
+
+                                                        <option value="4">4</option>
+
+                                                    </select>
+
+                                                    <br> <br>
+
+                                                    <button type="button" data-index="update-button"
+                                                            class="btn btn-primary btn-sm update-button">
+                                                        Buy now
+                                                    </button>
+
+                                                    &nbsp;
+
+                                                    <button type="button"
+                                                            data-index="{{ product.id }}"
+                                                            class="btn btn-danger btn-sm delete-button">
+                                                        Delete
+
+                                                    </button>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        {% endwith %}
+
+                    {% endfor %}
+                {% endif %}
+
+            {% endwith %}
+
+            {# style lại nút thanh toán #}
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <form action="{% url 'create-checkout-session' %}" method="POST"
+                              id="payment-form">
+                            {% csrf_token %}
+                            <div id="card-element" class="d-none"></div>
+                            <button type="submit" class="btn btn-primary">Thanh toán</button>
+                        </form>
+                    </div>
+
+                    <div class="col-auto text-end">
+                        <div class="h6 fw-bold d-inline">Sub total:&nbsp;</div>
+                        <div id="total" class="d-inline">{{ cart.get_total }}</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+    </main>
+
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        var stripe = Stripe('{{ sk_test_51QH2duG6ioceCuONjBIvdJJCSr8z7Lo7s0vRd8eDQT0iAZh9i5qpQTbUdKW3RjooRKWwfPbR2a74UIsEb9dQaBfs00PRwhWbI3 }}');
+        var elements = stripe.elements();
+        var cardElement = elements.create('card');
+        cardElement.mount('#card-element');
+
+        var form = document.getElementById('payment-form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            stripe.createToken(cardElement).then(function (result) {
+                if (result.error) {
+                    // Hiển thị lỗi cho người dùng
+                    document.getElementById('card-errors').textContent = result.error.message;
+                } else {
+                    // Gửi token tới server
+                    var hiddenInput = document.createElement('input');
+                    hiddenInput.setAttribute('type', 'hidden');
+                    hiddenInput.setAttribute('name', 'stripeToken');
+                    hiddenInput.setAttribute('value', result.token.id);
+                    form.appendChild(hiddenInput);
+                    form.submit();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        {#delete button#}
+        $(document).on('click', '.delete-button', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'cart-delete' %}",
+                data: {
+                    'product_id': $(this).data('index'),
+                    'csrfmiddlewaretoken': '{{ csrf_token }}',
+                    'action': 'post'
+                },
+                success: function (json) {
+                    location.reload();
+                    document.getElementById("cart-qty").textContent = json.qty;
+                    location.reload();
+                },
+                error: function (xhr) {
+                    console.log(xhr.status + ": " + xhr.responseText);
+                }
+            });
+        });
+
+        {#thay đổi số lượng#}
+        $(document).on('change', '.quantity-select', function (e) {
+            e.preventDefault();
+
+            // Lấy product ID và số lượng đã chọn
+            let productId = $(this).data('product-id');
+            let quantity = $(this).val();
+
+            // Kiểm tra nếu `quantity` không rỗng
+            if (quantity) {
+                $.ajax({
+                    url: "{% url 'cart-update' %}",
+                    type: 'POST',
+                    data: {
+                        'product_id': productId,
+                        'product_quantity': quantity,
+                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                        action: 'post'
+                    },
+                    success: function (json) {
+                        location.reload();
+                        console.log(json);
+                        document.getElementById("cart-qty").textContent = json.qty;
+                        document.getElementById("total").textContent = json.total;
+                    },
+                    error: function (error) {
+                        console.log("Có lỗi xảy ra khi cập nhật giỏ hàng");
+                    }
+                });
+            }
+        });
+    </script>
+
+{% endblock %}

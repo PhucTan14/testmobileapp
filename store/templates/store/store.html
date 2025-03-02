@@ -1,0 +1,81 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Introduction section -->
+    <div class="">
+        <div class="pb-3 h5 mt-4"> Welcome to our store</div>
+        <hr>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                {% for product in all_products|slice:":5" %}
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %} aria-label="Slide {{ forloop.counter }}" class="bg-dark"></button>
+                {% endfor %}
+              
+            </div>
+            <div class="carousel-inner">
+              {% for product in all_products|slice:":5" %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %} w-100 p-3" style="aspect-ratio: 16/9; overflow: hidden; object-fit: cover;">
+                    <div class="row">
+                        <div class="w-50">
+                            <a href="{{ product.get_absolute_url }}">
+                                <img src="{{ product.thumbnail.url }}" class="d-block w-100 object-fit border border-white" alt="{{ product.title }}">
+                            </a>
+                        </div>
+                        <div class="w-50 d-flex">
+                            <div class="card-body mt-auto">
+                                <h4 class="card-title">{{ product.title }}</h4>
+                                <p class="card-text">{{ product.description }}</p>
+                                <h5>{{ product.price }}</h5>
+                                <a href="{{ product.get_absolute_url }}" class="btn btn-primary">View product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+
+    <!-- All products section -->
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="pb-3 h5"> All products</div>
+            <hr>
+            <br>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 row-cols-lg-4">  
+                {% for product in all_products %}
+                    <div class="col">
+                        <div class="card shadow-sm d-flex flex-column h-100">
+                            <img class="img-fluid" alt="{{ product.title }}"
+                                 src="{{ product.thumbnail.url }}">
+                            <div class="card-body mt-auto">
+                                <p class="card-text">
+                                    <a class="text-decoration-none"
+                                       href="{{ product.get_absolute_url }}">
+                                        <h5>{{ product.title }}</h5>
+                                    </a>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6>{{ product.price }}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

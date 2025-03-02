@@ -1,0 +1,1688 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-10-26T02:33:55.500Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Mobile",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-10-26T02:34:04.188Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Mobile",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-10-26T02:36:37.088Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Iphone 16",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-10-26T07:08:29.306Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Iphone 16",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-10-26T07:08:36.782Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Mobile",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-10-26T07:26:33.331Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Mobile",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-10-26T07:26:42.294Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Laptop",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-10-26T07:26:48.325Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "Tablet",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-10-26T07:27:50.884Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Iphone 16",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2024-10-26T07:28:10.189Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Iphone 16",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Brand\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2024-10-26T07:31:22.421Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Galaxy S23",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2024-10-26T09:04:55.891Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "iPad Air (5th Generation)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2024-10-26T09:06:24.553Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Samsung Galaxy Tab S7 FE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2024-10-26T09:07:39.097Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Dell XPS 13 Plus",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2024-10-26T09:19:38.274Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "iPad Air (5th Generation)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2024-10-26T09:20:07.702Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Samsung Galaxy Tab S7 FE",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2024-10-26T09:20:19.555Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Dell XPS 13 Plus",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2024-10-26T09:20:46.049Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Samsung Galaxy Tab S7",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2024-10-27T11:42:46.157Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "iPad Air (5th Generation)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2024-10-27T11:43:02.599Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Samsung Galaxy Tab S7",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2024-10-27T11:43:10.744Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Dell XPS 13 Plus",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2024-10-27T12:19:53.907Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "iPad Air (5th Generation)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2024-10-27T12:20:04.175Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Samsung Galaxy Tab S7",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2024-10-27T12:20:19.407Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Dell XPS 13 Plus",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2024-10-27T16:13:16.209Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Iphone 16",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add categorys",
+            "content_type": 7,
+            "codename": "add_categorys"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change categorys",
+            "content_type": 7,
+            "codename": "change_categorys"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete categorys",
+            "content_type": 7,
+            "codename": "delete_categorys"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view categorys",
+            "content_type": 7,
+            "codename": "view_categorys"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add products",
+            "content_type": 8,
+            "codename": "add_products"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change products",
+            "content_type": 8,
+            "codename": "change_products"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete products",
+            "content_type": 8,
+            "codename": "delete_products"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view products",
+            "content_type": 8,
+            "codename": "view_products"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add category",
+            "content_type": 9,
+            "codename": "add_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change category",
+            "content_type": 9,
+            "codename": "change_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete category",
+            "content_type": 9,
+            "codename": "delete_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view category",
+            "content_type": 9,
+            "codename": "view_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add product",
+            "content_type": 8,
+            "codename": "add_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change product",
+            "content_type": 8,
+            "codename": "change_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete product",
+            "content_type": 8,
+            "codename": "delete_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view product",
+            "content_type": 8,
+            "codename": "view_product"
+        }
+    },
+    {
+        "model": "store.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$BRgtVKxsQjsD0Hwp6qM8UB$9SxPsVlIgF1rwHbbea0RwgfNuAMgyJ0Ps55yKz/6bfU=",
+            "last_login": "2024-10-29T04:45:45.242Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "anbui5948@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-10-26T02:13:57.316Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "store",
+            "model": "categorys"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "store",
+            "model": "product"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "store",
+            "model": "category"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "dh3wmy2y7onipiwc1vwb0cfdbuuybthk",
+        "fields": {
+            "session_data": "eyJzZXNzaW9uX2tleSI6e319:1t56qZ:OnAfRu6h64dbKGOkrIlxEd0q4nYCuEtKbpvAcvnF0J4",
+            "expire_date": "2024-11-10T17:14:35.105Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "t5xp8e3sw4tllnbreno67mx61zpxsfde",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCHwiAu3XuGZhgGqRpISrsy3l2bdKHb_977LzXSupRx7TKPU1JnBerwu0Xih9QNpDvVW9Pc6jJPUW-K3mnX15bkedndv4NCvXzrYAYEEygCisEoiCH7LNZCwsyeYcjB-Giss06yZwaTENhZ7-h4Slm9P9PUN7E:1t50gg:kgdA4BJwzNxTFn8wud6WdDd47gcvlqX4GDAtI0a71Bg",
+            "expire_date": "2024-11-10T10:39:58.997Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "yc83jlrjqxxvmcueydluzef42rnbfkr5",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe-yNbJY4w9OSc8ZLHu9JiHIluKkQFHuDpHSpH0z81Zo3NpQix_5C926XcCHZe790njyQ4IOEE5bDDRy2UF6h_KqgmqZpyGKXREHbeJZE38eh3s66EPr_7WTN4PShYiGpYlsjMs2s1KYTCZLeMtO2iiVVpqzJUKZDJJWVofrPWXYfkYTPf8:1t5e6z:dyYMYJYhM34cZJqWeMLGzwiwCOVEHhEXKAZmEQMxA7M",
+            "expire_date": "2024-11-12T04:45:45.244Z"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 1,
+        "fields": {
+            "name": "Mobile",
+            "slug": "mobile"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 2,
+        "fields": {
+            "name": "Laptop",
+            "slug": "laptop"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 3,
+        "fields": {
+            "name": "Tablet",
+            "slug": "tablet"
+        }
+    },
+    {
+        "model": "store.brand",
+        "pk": 1,
+        "fields": {
+            "name": "Iphone",
+            "slug": "iphone"
+        }
+    },
+    {
+        "model": "store.brand",
+        "pk": 2,
+        "fields": {
+            "name": "Oppo",
+            "slug": "oppo"
+        }
+    },
+    {
+        "model": "store.brand",
+        "pk": 3,
+        "fields": {
+            "name": "Samsung",
+            "slug": "samsung"
+        }
+    },
+    {
+        "model": "store.brand",
+        "pk": 4,
+        "fields": {
+            "name": "Xiaomi",
+            "slug": "xiaomi"
+        }
+    },
+    {
+        "model": "store.brand",
+        "pk": 5,
+        "fields": {
+            "name": "Lenovo",
+            "slug": "lenovo"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "brand": 1,
+            "title": "Iphone 16 Pro Max Chính hãng",            
+            "description": "iPhone 16 Pro Max có tính năng và thiết kế ấn tượng, cùng cấu hình tối ưu. Với những đổi mới từ phía nhà sản xuất, kết hợp công nghệ hiện đại, điện thoại là mẫu flagship đáng trải nghiệm",
+            "slug": "iphone-16-promax"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "brand": 1,
+            "title": "Iphone 16 Pro Chính hãng",            
+            "description": "iPhone 16 Pro có tính năng và thiết kế ấn tượng, cùng cấu hình tối ưu. Với những đổi mới từ phía nhà sản xuất, kết hợp công nghệ hiện đại, điện thoại là mẫu flagship đáng trải nghiệm",
+            "slug": "iphone-16-pro"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 3,
+        "fields": {
+            "category": 1,
+            "brand": 3,
+            "title": "Samsung Galaxy Z Fold6",            
+            "description": "Samsung Z Fold 6 là siêu phẩm điện thoại gập được ra mắt ngày 10/7, hiệu năng dẫn đầu phân khúc với chip 8 nhân Snapdragon 8 Gen 3 for Galaxy, 12GB RAM cùng bộ nhớ trong từ 256GB đến 1TB. Thay đổi mạnh mẽ về hiệu năng và thiết kế, Galaxy Z Fold 6 hứa hẹn sẽ là chiếc smartphone AI đáng sở hữu nhất nửa cuối năm 2024.",
+            "slug": "samsung-galaxy-z-fold6"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 4,
+        "fields": {
+            "category": 1,
+            "brand": 3,
+            "title": "Samsung Galaxy S24 Ultra",            
+            "description": "Samsung S24 Ultra là siêu phẩm smartphone đỉnh cao mở đầu năm 2024 đến từ nhà Samsung với chip Snapdragon 8 Gen 3 For Galaxy mạnh mẽ, công nghệ tương lai Galaxy AI cùng khung viền Titan đẳng cấp hứa hẹn sẽ mang tới nhiều sự thay đổi lớn về mặt thiết kế và cấu hình. SS Galaxy S24 bản Ultra sở hữu màn hình 6.8 inch Dynamic AMOLED 2X tần số quét 120Hz. Máy cũng sở hữu camera chính 200MP, camera zoom quang học 50MP, camera tele 10MP và camera góc siêu rộng 12MP.",
+            "slug": "samsung-galaxy-s24-ultra"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 5,
+        "fields": {
+            "category": 3,
+            "brand": 3,
+            "title": "Samsung Galaxy Tab S9 FE 5G",            
+            "description": "Máy tính bảng Samsung Galaxy Tab S9 FE được trang bị màn hình 10.9 inch với tấm nền LCD cùng tần số quét 90Hz giúp mang lại trải nghiệm hiển thị sống động. Máy được trang bị chuẩn kháng nước và bụi bẩn IP68 cùng với dung lượng pin tới 8000 mAh. Cấu hình máy với chipset Exynos 1380 cùng RAM 6GB mang lại trải nghiệm dùng ổn định.",
+            "slug": "samsung-fala-tab-s9-fe-5g"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 6,
+        "fields": {
+            "category": 3,
+            "brand": 1,
+            "title": "iPad Air 6 M2 11 inch",            
+            "description": "Pad Air 6 M2 11 inch sở hữu màn hình Retina 11 inch với công nghệ IPS cùng dải màu P3 hỗ trợ hiển thị hình ảnh sống động. iPad với màn hình độ sáng cao tới 500 nits cùng với lớp phủ oleophobia chống dấu vân tay vượt trội. Cùng với đó iPad Air 6 M2 2024 này hoạt động trên con chip Apple M2 cùng dung lượng RAM 8GB.",
+            "slug": "ipad-air-6-m2-11-inch"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 7,
+        "fields": {
+            "category": 2,
+            "brand": 1,
+            "title": "Apple MacBook Air M1",            
+            "description": "Macbook Air M1 là dòng sản phẩm có thiết kế mỏng nhẹ, sang trọng và tinh tế cùng với đó là giá thành phải chăng nên MacBook Air đã thu hút được đông đảo người dùng yêu thích và lựa chọn. Đây cũng là một trong những phiên bản Macbook Air mới nhất mà khách hàng không thể bỏ qua khi đến với CellphoneS. Dưới đây là chi tiết về thiết kế, cấu hình của máy.",
+            "slug": "apple-macbook-air-m1"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 8,
+        "fields": {
+            "category": 2,
+            "brand": 5,
+            "title": "Laptop Lenovo Ideapad Slim 5",            
+            "description": "Laptop Lenovo Ideapad Slim 5 14IAH8 83BF002NVN là một lựa chọn đáng cân nhắc trong phân khúc tầm trung. Với thiết kế hiện đại, mỏng nhẹ cùng bộ nhớ ấn tượng, sản phẩm laptop Lenovo Ideapad hứa hẹn sẽ khiến người dùng hài lòng.",
+            "slug": "laptop-lenovo-ideapad-slim-5"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 1,
+        "fields": {
+            "id": 1,
+            "cpu": "Apple A16 Bionic",
+            "camera": "48 MP",
+            "battery": "No information",
+            "screen": "6.9 inch",
+            "note": "No information"
+        }
+    }
+    ,
+    {
+        "model": "store.productinfo",
+        "pk": 2,
+        "fields": {
+            "id": 2,
+            "cpu": "Apple A16 Bionic",
+            "camera": "48 MP",
+            "battery": "No information",
+            "screen": "6.7 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 3,
+        "fields": {
+            "id": 3,
+            "cpu": "Snapdragon 8 Gen 3",
+            "camera": "50 MP",
+            "battery": "4400 mAh",
+            "screen": "7.6 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 4,
+        "fields": {
+            "id": 4,
+            "cpu": "Snapdragon 8 Gen 3",
+            "camera": "200 MP",
+            "battery": "5000 mAh",
+            "screen": "6.8 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 5,
+        "fields": {
+            "id": 5,
+            "cpu": "Exynos 1380",
+            "camera": "8 MP",
+            "battery": "8000 mAh",
+            "screen": "10.9 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 6,
+        "fields": {
+            "id": 6,
+            "cpu": "Apple M2",
+            "camera": "12 MP",
+            "battery": "No information",
+            "screen": "11 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 7,
+        "fields": {
+            "id": 7,
+            "cpu": "Apple M1",
+            "camera": "No information",
+            "battery": "No information",
+            "screen": "13.3 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productinfo",
+        "pk": 8,
+        "fields": {
+            "id": 8,
+            "cpu": "Intel Core i5 12th Gen",
+            "camera": "No information",
+            "battery": "No information",
+            "screen": "16.7 inch",
+            "note": "No information"
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "color": "Black Titan",
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": 34990000       
+        }
+    }
+    ,
+    {
+        "model": "store.productdetail",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "color": "Silver",
+            "ram": "8GB",
+            "storage": "512GB",
+            "price": 37990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 3,
+        "fields": {
+            "product_id": 1,
+            "color": "Gold",
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": 39990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 4,
+        "fields": {
+            "product_id": 2,
+            "color": "Black",
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": 32990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 5,
+        "fields": {
+            "product_id": 2,
+            "color": "White",
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": 35990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 6,
+        "fields": {
+            "product_id": 3,
+            "color": "Phantom Black",
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": 41990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 7,
+        "fields": {
+            "product_id": 3,
+            "color": "Phantom Silver",
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": 39990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 8,
+        "fields": {
+            "product_id": 4,
+            "color": "Graphite",
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": 42990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 9,
+        "fields": {
+            "product_id": 4,
+            "color": "Sky Blue",
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": 40990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 10,
+        "fields": {
+            "product_id": 5,
+            "color": "Mystic Black",
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": 15990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 11,
+        "fields": {
+            "product_id": 5,
+            "color": "Mystic Silver",
+            "ram": "6GB",
+            "storage": "256GB",
+            "price": 17990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 12,
+        "fields": {
+            "product_id": 6,
+            "color": "Space Gray",
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": 19990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 13,
+        "fields": {
+            "product_id": 6,
+            "color": "Silver",
+            "ram": "8GB",
+            "storage": "512GB",
+            "price": 22990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 14,
+        "fields": {
+            "product_id": 7,
+            "color": "Space Gray",
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": 24990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 15,
+        "fields": {
+            "product_id": 7,
+            "color": "Gold",
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": 29990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 16,
+        "fields": {
+            "product_id": 8,
+            "color": "Platinum Gray",
+            "ram": "8GB",
+            "storage": "512GB",
+            "price": 20990000
+        }
+    },
+    {
+        "model": "store.productdetail",
+        "pk": 17,
+        "fields": {
+            "product_id": 8,
+            "color": "Platinum Gray",
+            "ram": "16GB",
+            "storage": "1TB",
+            "price": 25990000
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max-2.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 3,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max-3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 4,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max-4.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 5,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max-5.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 6,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max-tita-sa-mac.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 7,
+        "fields": {
+            "product_id": 1,
+            "image": "images/iphone-16-pro-max-tu-nhien.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 8,
+        "fields": {
+            "product_id": 2,
+            "image": "images/iphone-16-pro-1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 9,
+        "fields": {
+            "product_id": 2,
+            "image": "images/iphone-16-pro-2.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 10,
+        "fields": {
+            "product_id": 2,
+            "image": "images/iphone-16-pro-3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 11,
+        "fields": {
+            "product_id": 2,
+            "image": "images/iphone-16-pro-4.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 12,
+        "fields": {
+            "product_id": 2,
+            "image": "images/iphone-16-pro-titan-tu-nhien.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 13,
+        "fields": {
+            "product_id": 2,
+            "image": "images/iphone-16-pro-titan-den.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 14,
+        "fields": {
+            "product_id": 3,
+            "image": "images/samsung-galaxy-z-fold-6-xanh_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 15,
+        "fields": {
+            "product_id": 3,
+            "image": "images/samsung-galaxy-z-fold-6-xanh_2.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 16,
+        "fields": {
+            "product_id": 3,
+            "image": "images/samsung-galaxy-z-fold-6-xanh_3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 17,
+        "fields": {
+            "product_id": 3,
+            "image": "images/samsung-galaxy-z-fold-6-xanh_4.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 18,
+        "fields": {
+            "product_id": 3,
+            "image": "images/samsung-galaxy-z-fold-6-xanh_5.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 19,
+        "fields": {
+            "product_id": 3,
+            "image": "images/samsung-galaxy-z-fold-6-xanh_6.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 20,
+        "fields": {
+            "product_id": 4,
+            "image": "images/ss-s24-ultra-den-600.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 21,
+        "fields": {
+            "product_id": 4,
+            "image": "images/samsung-galaxy-s24-ultra-1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 22,
+        "fields": {
+            "product_id":4,
+            "image": "images/samsung-galaxy-s24-ultra-2.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 23,
+        "fields": {
+            "product_id": 4,
+            "image": "images/samsung-galaxy-s24-ultra-3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 24,
+        "fields": {
+            "product_id": 4,
+            "image": "images/samsung-galaxy-s24-ultra-3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 25,
+        "fields": {
+            "product_id": 5,
+            "image": "images/samsung-galaxy-tab-s9-fe-mint-13.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 26,
+        "fields": {
+            "product_id": 5,
+            "image": "images/galaxy-tab-s9-fe-xam-3_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 27,
+        "fields": {
+            "product_id": 5,
+            "image": "images/galaxy-tab-s9-fe-xam-2_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 28,
+        "fields": {
+            "product_id": 5,
+            "image": "images/samsung-galaxy-tab-s9-fe-mint-12.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 29,
+        "fields": {
+            "product_id": 5,
+            "image": "images/samsung-galaxy-tab-s9-fe-mint-3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 30,
+        "fields": {
+            "product_id": 5,
+            "image": "images/samsung-galaxy-tab-s9-fe-mint-2.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 31,
+        "fields": {
+            "product_id": 5,
+            "image": "images/samsung-galaxy-tab-s9-fe-mint-5.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 32,
+        "fields": {
+            "product_id": 5,
+            "image": "images/samsung-galaxy-tab-fe-bac-12_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 33,
+        "fields": {
+            "product_id": 6,
+            "image": "images/ipad-air-6-m2-11-inch_2_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 34,
+        "fields": {
+            "product_id": 6,
+            "image": "images/ipad-air-6-m2-11-inch_8.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 35,
+        "fields": {
+            "product_id": 6,
+            "image": "images/ipad-air-6-m2-11-inch_7__4.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 36,
+        "fields": {
+            "product_id": 6,
+            "image": "images/ipad-air-6-m2-11-inch_4__1_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 37,
+        "fields": {
+            "product_id": 6,
+            "image": "images/ipad-air-6-m2-11-inch_3__1_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 38,
+        "fields": {
+            "product_id": 6,
+            "image": "images/ipad-air-6-m2-11-inch_2__1_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 39,
+        "fields": {
+            "product_id": 7,
+            "image": "images/macbookm1_1.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 40,
+        "fields": {
+            "product_id": 7,
+            "image": "images/macbookm1_2.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 41,
+        "fields": {
+            "product_id": 7,
+            "image": "images/macbookm1_3.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 42,
+        "fields": {
+            "product_id": 7,
+            "image": "images/macbookm1_4.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 43,
+        "fields": {
+            "product_id": 7,
+            "image": "images/macbookm1_5.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 44,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_11__2_81.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 45,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_2__3_28.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 46,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_1__2_33.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 47,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_5__3_21.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 48,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_6__122.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 49,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_10__2_82.png",
+            "product_detail_id": null
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 50,
+        "fields": {
+            "product_id": 8,
+            "image": "images/text_ng_n_7__119.png",
+            "product_detail_id": null
+        }
+    }
+]

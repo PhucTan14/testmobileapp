@@ -1,0 +1,28 @@
+{% extends "store/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+<span>Đang chuyển tiếp đến dịch vụ thứ 3</span>
+
+<!-- <h3></h3> -->
+<form method="post" action="">  
+    {% csrf_token %}
+<button type="submit"></button>
+</form>
+
+<style>
+    form {
+        height: 0;
+        overflow: hidden;
+    }
+</style>
+
+<script>
+    setTimeout(function() {
+        document.querySelector('form').submit();
+    }, 1000);
+</script>
+{% endblock %}

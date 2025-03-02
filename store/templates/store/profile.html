@@ -1,0 +1,52 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Thông tin cá nhân</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>Họ và tên:</strong> {{ user.get_full_name }}</p>
+                    <p><strong>Email:</strong> {{ user.email }}</p>
+                    <p><strong>Địa chỉ:</strong> {{ user.address }}</p>
+                    <p><strong>Số điện thoại:</strong> {{ user.phone }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Lịch sử mua hàng</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Ngày mua</th>
+                                <th>Tổng tiền</th>
+                                <th>Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in orders %}
+                            <tr>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{ order.created }}</td>
+                                <td>{{ order.total }}</td>
+                                <td><a href="{% url 'order-detail' order.id %}">Xem chi tiết</a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% endblock %}  
