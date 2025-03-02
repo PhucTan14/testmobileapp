@@ -179,12 +179,6 @@ SOCIALACCOUNT_PROVIDERS = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-SOCIALACCOUNT_PROVIDERS['google']['APP'] = {
-	'client_id': '117481881349-0lu0k5e8ubvgocjbe7fqqu4361aehcp6.apps.googleusercontent.com',
-	'secret': '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',
-	'key': ''
-}
-
 AUTH_USER_MODEL = 'store.User'
 
 ACCOUNT_ADAPTER = 'store.adapter.NoSignupAccountAdapter'
@@ -197,20 +191,7 @@ ACCOUNT_FORMS = {
 
 # XÁC THỰC MAIL
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_AUTHENTICATION_METHOD = 'username'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-BREVO_API_KEY = "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"
-EMAIL_HOST = 'smtp-relay.brevo.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-
-EMAIL_HOST_USER = 'info@antoanthongtin.online'
-EMAIL_HOST_PASSWORD = BREVO_API_KEY
-DEFAULT_FROM_EMAIL = 'info@antoanthongtin.online'
 
 # Cho phép 404, 500
 
