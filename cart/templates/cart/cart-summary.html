@@ -140,12 +140,12 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
-                        <form action="{% url 'create-checkout-session' %}" method="POST"
+                        <a href="/cart/pay">Thanh toán</a>
+                        <!-- <form action="{% url 'create-checkout-session' %}" method="POST"
                               id="payment-form">
-                            {% csrf_token %}
                             <div id="card-element" class="d-none"></div>
                             <button type="submit" class="btn btn-primary">Thanh toán</button>
-                        </form>
+                        </form> -->
                     </div>
 
                     <div class="col-auto text-end">
@@ -160,35 +160,6 @@
         <br>
 
     </main>
-
-
-    <script src="https://js.stripe.com/v3/"></script>
-    <script>
-        var stripe = Stripe('{{ sk_test_51QH2duG6ioceCuONjBIvdJJCSr8z7Lo7s0vRd8eDQT0iAZh9i5qpQTbUdKW3RjooRKWwfPbR2a74UIsEb9dQaBfs00PRwhWbI3 }}');
-        var elements = stripe.elements();
-        var cardElement = elements.create('card');
-        cardElement.mount('#card-element');
-
-        var form = document.getElementById('payment-form');
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-            stripe.createToken(cardElement).then(function (result) {
-                if (result.error) {
-                    // Hiển thị lỗi cho người dùng
-                    document.getElementById('card-errors').textContent = result.error.message;
-                } else {
-                    // Gửi token tới server
-                    var hiddenInput = document.createElement('input');
-                    hiddenInput.setAttribute('type', 'hidden');
-                    hiddenInput.setAttribute('name', 'stripeToken');
-                    hiddenInput.setAttribute('value', result.token.id);
-                    form.appendChild(hiddenInput);
-                    form.submit();
-                }
-            });
-        });
-    </script>
-
     <script>
         {#delete button#}
         $(document).on('click', '.delete-button', function (e) {

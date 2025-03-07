@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import pymysql
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,6 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-%^l*60m_m0j0gk0fg**1(uu%(abqr7^h*6vreph3xa6811kwy%'
+
+
+VNPAY_TMN_CODE = "G7897M6F"
+VNPAY_HASH_SECRET_KEY = "5DA0GZW37V90O04VWDB7E5NY0QBM74NR"
+VNPAY_PAYMENT_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"
+VNPAY_RETURN_URL = "http://127.0.0.1:8000/cart/success/"
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

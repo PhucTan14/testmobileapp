@@ -1,0 +1,27 @@
+{% extends "store/base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="transaction-failed text-center" style="margin-top: 50px;">
+    <img src="{% static 'media/images/logo/error_payment.webp' %}" alt="Transaction Failed" style="width: 150px; height: 150px;">
+    <div style="display: flex; margin-left: 450px; justify-items: flex-start; gap: 20px;">
+        {% csrf_token %}
+        <form action="{% url 'create-checkout-session' %}" method="POST" id="payment-form">
+            <div id="card-element" class="d-none"></div>
+            <button type="submit" class="btn btn-primary">Srripe</button>
+        </form>
+        {% csrf_token %}
+        <form action="{% url 'payment' %}" method="POST" id="payment-form">
+            <div id="card-element" class="d-none"></div>
+            <button type="submit" class="btn btn-primary">VNPPAY</button>
+        </form>
+    </div>
+
+    
+</div>
+
+{% endblock %}

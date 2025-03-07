@@ -30,16 +30,16 @@
                                 <th>STT</th>
                                 <th>Ngày mua</th>
                                 <th>Tổng tiền</th>
-                                <th>Chi tiết</th>
+                                <th>Trạng Thái</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for order in orders %}
                             <tr>
-                                <td>{{ forloop.counter }}</td>
-                                <td>{{ order.created }}</td>
-                                <td>{{ order.total }}</td>
-                                <td><a href="{% url 'order-detail' order.id %}">Xem chi tiết</a></td>
+                                <td>{{ order.id}}</td>
+                                <td>{{ order.created_at}}</td>
+                                <td>{{ order.total}}</td>
+                                <td>{{ order.status}}</td>
                             </tr>
                             {% endfor %}
                         </tbody>

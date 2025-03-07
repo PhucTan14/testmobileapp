@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 from django.shortcuts import render
 
-from .models import Category, Product, ProductImage, ProductDetail
+from .models import Category, Product, ProductImage, ProductDetail, Order
 
 
 def error_404(request, exception):
@@ -57,4 +57,5 @@ def product_info(request, slug):
 
 
 def profile(request):
-	return render(request, 'store/profile.html')
+	orders = Order.objects.filter(user_id=request.user.id).order_by('-created_at')  
+	return render(request, 'store/profile.html', {'orders': orders})
